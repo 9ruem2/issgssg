@@ -1,0 +1,123 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+
+
+
+#contents > ul{
+    display: flex;
+    width: 30%;
+    height: 50px;
+    line-height: 50px;
+}
+
+#contents > ul li{
+    width: 50%;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#contents > ul li.b{
+    background-color: rgb(243, 243, 243);
+}
+
+#contents > ul li.a{
+    background-color: #ff7b29;
+    color: #fff;
+}
+
+
+
+#contents h2 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#contents h2 img{
+    width: 50px;
+}
+
+#contents table {
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+}
+
+#contents table thead > tr {
+    font-size: 16px;
+    font-weight: 400;
+}
+#contents table tr {
+    font-weight: 300;
+    font-size: 14px;
+}
+#contents table tr:nth-child(2n){
+    background-color: #fff0e0;
+}
+#contents table tr:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.to {
+    text-align: center;
+    width: 70%;
+}
+.ct {
+    width: 70%;
+}
+.date {
+    width: 20%;
+    text-align: center;
+}
+.nicon {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+
+#page {
+	width:100%;
+	height: 10px;
+    margin: 40px auto;
+    text-align: center;
+    
+}
+#page ul{
+    display: flex;
+    font-weight: 300;
+    font-size: 16px;
+    width: 40%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+#page ul li {
+    text-align: center;
+}
+
+#find {
+    margin:50px auto 100px;
+    width: 100%;
+    text-align: center;
+}
+
+#find select {
+    width: 5%;
+}
+#find input {
+    width : 20%;
+}
+
+@media(max-width:700px) {
+    #contents > ul li{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:450px) {
+    #contents > ul li{
+        font-size: 14px;
+    }
+}

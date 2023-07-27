@@ -1,0 +1,98 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+#wrap{
+    width: 60%;
+    margin: 0 auto;
+   
+
+}
+
+#wrap h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+#input{
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+input:focus::-webkit-input-placeholder {color:transparent; }
+
+.id{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.pw{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+#id_save{cursor: pointer;}
+
+label{cursor: pointer;}
+
+.login{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 50px 0;
+    line-height: 40px;
+    font-size: 18px;
+    background-color: #ff7b29;
+    color: #fff;
+    cursor: pointer;
+}
+
+#sns{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#sns p{
+    margin: 10px 0;
+}
+
+#sns li{
+    width: 100%;
+    text-align: center;
+}
+
+#bottom{
+    width: 70%;
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+#bottom li{
+    padding: 0 10px;
+}
+
+@media (max-width:800px){
+    #wrap{
+        width: 100%;
+    }
+    #input{
+        width: 90%;
+    }
+}

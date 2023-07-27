@@ -1,0 +1,244 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+#wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+
+#wrap h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+/*input{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}*/
+
+input:focus::-webkit-input-placeholder {color:transparent;}
+
+.pw{
+    height: 40px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+.check{
+    display: block;
+    width: 10%;
+    height: 40px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px; 
+    line-height: 40px;
+    font-size: 18px;
+    background-color: #ff7b29;
+    border: 1px solid silver;
+    border-radius : 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width:800px){
+    #wrap{
+        width: 100%;
+    }
+    #input{
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+#contents {
+
+    width: 60%;
+    /*height: 2000px;*/
+}
+
+#contents h3 {
+
+    font-weight: 500;
+    height: 30px;
+    font-size: 20px;  
+}
+
+.agree{display: flex; justify-content: space-between;}
+
+.logo_wrap {
+
+    width: 350px;
+    margin: 40px auto 40px;
+    overflow: hidden;
+    
+}
+.logo_wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#cont0 {
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+#cont0 textarea {
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+
+#cont0 input {
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+#cont1 {
+    height: 300px;
+    width: 100%; 
+}
+
+#cont1 textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+#cont2 {
+
+    margin: 0 auto;
+    width: 100%;
+}
+
+#cont2 input {
+
+    height: 50px;
+	width: 100%;
+    margin-bottom: 20px;
+}
+
+#cont2 #nick{width: 91%;}
+#cont2 button{width: 8%;}
+
+#cont2 li:nth-child(4) input{width: 100%;}
+
+
+
+#joo_text input {
+
+    width: 100%;
+}
+/*생년월일*/
+#birthday {
+    display: flex;
+    justify-content: space-between;
+}
+#birthday input {   
+    width: 100%; 
+}
+
+
+
+
+#sex input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/*이메일*/
+
+#Email {
+    display: flex;
+    justify-content: space-between;
+}
+#Email input {
+    width: 100%;
+}
+
+
+
+#Email p {
+    margin-top: 18px;
+}
+#phone {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+#phone input {
+    width: 100%;
+}
+
+
+#address li:nth-child(2) {
+    width: 100%;
+    
+}
+#address li:nth-child(1) {
+    width: 100%;
+    
+}
+#address .address{
+	width: 91%;
+}
+#address li:nth-child(2) button{
+    width: 8%;
+    
+}
+
+
+
+#address li:last-child input {
+    width: 100%;
+}
+
+.last{
+    display: flex;
+    justify-content: center;
+}
+
+.last > button{
+	border: 1px solid gray;
+	width: 100px;
+	height: 40px;
+    margin: 20px 10px 50px;
+    border-radius: 5px;    
+}
+
+#joo1 {
+    font-size: 30px;
+}
+
+
+
+@media (max-width : 1500px) {
+    #cont0 {
+        width: 100%;
+    }
+}

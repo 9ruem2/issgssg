@@ -1,0 +1,285 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+
+
+
+#rank ul {
+    display: flex;
+    max-width: 1500px;
+    justify-content: space-around;
+    margin: 0 auto;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+#rank li {
+    width: 23%;
+    position: relative;
+    transition: all 0.3s;
+    margin:50px 0;
+}
+
+#rank li a img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+#rank a img {
+    width: 300px;
+    height: 300px;
+}
+
+
+
+.rank_title {
+    font-size: 22px;
+    margin-top: 20px;
+    font-family: 'KyoboHand';
+}
+
+.rank_name {
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: 'KyoboHand';
+}
+
+.icon {
+    position: absolute;
+    top: 0; left: 0;
+    width:60px; 
+}
+
+#rank ul li:first-child .icon, #rank ul li:nth-child(2) .icon, #rank ul li:nth-child(3) .icon {
+    width: 70px;
+}
+
+#rank li:hover {
+    transform: scale(1.1);
+}
+
+#top {
+    background: url("../images/top_1.png") no-repeat;
+    display: block;
+    height: 82px;
+    width: 196px;
+    margin: 0 auto;
+    transition: all 0.3s;
+}
+
+#top:hover {
+    background: url("../images/top1_2.png");
+}
+.bg_color {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+#rank_bg {
+    background-color: #fff9ea;
+}
+
+#week_bg {
+    background-color: #fff0ca;
+}
+
+
+
+
+/* week 슬라이드 사이여백 */
+.slick-slide { margin: 0 10px; }
+.slick-list { margin: 0 -10px; }
+
+#week {
+    margin-bottom:130px;
+    width:90%;
+    padding:0 20px;
+}
+
+#week .t {
+    margin-bottom:50px;
+}
+
+#week_box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+#week_box > div img {
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.slick-next:before, .slick-prev:before {
+    color:#000;
+}
+
+#mockup_bg {    
+    width: 100%;
+    background: url("../images/good.png") no-repeat center;
+    background-size: cover;
+    margin-bottom:100px;
+}
+
+#mockup {
+    width: 100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.2);
+    color:#fff;
+    padding:140px 0;
+}
+
+#mockup .t {
+    font-size: 30px;
+    margin-bottom: 50px;
+
+}
+
+#mockup .btn_wrap {
+    max-width:600px;
+    width:90%;
+    display:flex;
+    justify-content: space-around;
+    margin:0 auto;
+}
+
+#mockup .btn_wrap a {
+    display: block;
+    width:181px;
+    text-align: center;
+    height: 71px;
+    transition: all 0.3s;
+}
+
+#mockup .btn_wrap a:first-child {
+    background: url("../images/baro1.png") no-repeat;
+    
+}
+
+#mockup .btn_wrap a:first-child:hover {
+    background: url("../images/baro1_2.png") no-repeat;
+}
+
+#mockup .btn_wrap a:last-child {
+    background: url("../images/baro2.png") no-repeat;
+}
+
+#mockup .btn_wrap a:last-child:hover {
+    background: url("../images/baro2_2.png") no-repeat;
+}
+
+#bottom_wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    padding:0 20px;
+}
+
+#bottom_wrap h2 img {
+    width: 50px;
+}
+
+#bottom_wrap > div {
+    width:48%;
+}
+
+#notice >  h2, #gallery > h2  {
+    font-size: 30px; 
+    position:relative;
+    margin-bottom: 20px;
+    font-family: 'IM_Hyemin-Bold';
+    display: flex;
+    align-items: center;
+}
+
+#notice > h2 > a, #gallery > h2 > a {
+    font-size:16px;
+    position:absolute;
+    right:0; bottom:0;
+    
+}
+
+
+
+#notice ul li {
+    display: flex;
+    justify-content: space-between;
+    height: 38px;
+    line-height: 38px;
+    border-bottom:1px dotted silver;
+}
+
+#notice ul li a, #notice ul li span {
+    display: block;
+}
+
+#notice ul li a {
+    width:70%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+
+}
+
+
+
+#gallery ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#gallery > ul > li{
+    width: 30%;
+    height: 200px;
+}
+
+#gallery > ul > li:hover {
+    opacity: 0.8;
+}
+
+#gallery > ul > li img {
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.icon_t img {
+    width: 50px;
+}
+
+@media(max-width:1300px) {
+    #rank li {
+       width: 42%;
+    }
+    .week_box > li {        
+       width: 42%;
+    }
+}
+
+@media(max-width:900px) {
+    #bottom_wrap > div {
+        width:100%;
+    }
+    #bottom_wrap > div:first-child {
+        margin-bottom: 30px;
+    }
+}
+
+
+@media(max-width:750px) {
+    #rank li {
+       width: 80%;
+    }
+    .week_box > li {        
+        width: 80%;
+     }
+}

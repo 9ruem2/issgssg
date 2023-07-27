@@ -1,0 +1,78 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+
+
+
+#view_cont h2 {
+    font-family: 'IM_Hyemin-Bold';
+    font-size: 24px;
+    margin-bottom: 30px;
+} 
+
+#view_cont p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 150%;
+    margin-top: 10px;
+}
+#view_cont{
+    width: 80%;
+   margin: 0 auto 100px;
+   line-height: 180%;
+   text-align: left;
+   padding: 50px 0;
+}
+
+#view_icon .artlike {
+	list-style: none;
+	margin-bottom: 30px;
+	
+}
+
+#list {
+    width: 100%;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    font-family: 'IM_Hyemin-Bold';
+    
+}
+#list span {
+    text-align: left;
+    display: block;
+    margin-left: 45px;
+}
+#list  table {
+    margin-top: 100px;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+}
+
+
+#list table tr {
+    font-weight: 300;
+    font-size: 14px;
+}
+#list table tr:nth-child(2n){
+    background-color: #fff0e0;
+}
+#list table tr:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.ct {
+    width: 70%;
+}
+.date {
+    width: 20%;
+    text-align: center;
+}
+ #page1 ul, #page2 ul {
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+    margin: 50px auto;
+}
